@@ -1,1 +1,51 @@
-\chapter{Vorgehensweise}
+\chapter{Vorgehensweise bzw Darstellung Komponenten???}
+
+\section{hardwaretechnische Umsetzung}
+In diesem Abschnitt werden alle Maßnahemen für die hardwaretechnische Lösung aufgezeigt. Dabei wird die Funktionsweise erläutert und die technischen Spezifikationen dargelegt.
+\subsection{Einsatz von Regalbediengeräten}
+
+Der technische Ablauf eines Regalbediengeräts (RBG) läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS) gesteuert werden:
+\begin{enumerate}
+\item Auftragseingang
+Das WMS gibt dem RBG einen Ein- oder Auslagerungsauftrag, der den genauen Lagerplatz der Ware sowie deren Position im Regal enthält. Das RBG erhält diese Informationen und bereitet sich automatisch auf die Ausführung vor.
+\item Positionierung und Anfahrt
+Das Regalbediengerät bewegt sich entlang der fest installierten Schienen oder Führungen in der Gasse des Hochregallagers. Es fährt zuerst horizontal zur richtigen Regalposition und nutzt dann vertikale Schienen, um auf die genaue Höhe des Lagerfachs zu gelangen.
+\item Sensoren und Ausrichtung
+Mithilfe von Lasersensoren und Kamerasystems überprüft das RBG die Position der Ware sowie des Lagerplatzes. Die Sensoren sorgen dafür, dass das Gerät millimetergenau an der gewünschten Position anhält, ohne menschliches Eingreifen.
+\item Ein- oder Auslagerungsvorgang
+Je nach Auftrag wird die Ware durch einen Teleskoparm oder eine Gabel erfasst. Beim Einlagern wird die Ware präzise in das Fach geschoben, beim Auslagern greift das RBG die Ware und zieht sie zurück in die eigene Vorrichtung.
+\item Transport zur Übergabestation
+Nach Abschluss des Vorgangs fährt das RBG automatisch zur Übergabestation, wo die Ware für den Weitertransport durch Förderbänder, autonome Transportfahrzeuge oder manuelle Entnahme bereitgestellt wird.
+\item Rückmeldung an das WMS
+Nach erfolgreicher Ein- oder Auslagerung meldet das RBG den Abschluss des Auftrags an das Lagerverwaltungssystem, das den Lagerbestand aktualisiert und den nächsten Auftrag erteilt.
+Diese vollautomatisierten und präzisen Abläufe ermöglichen einen effizienten Lagerbetrieb und reduzieren die Notwendigkeit von manuellen Eingriffen.
+\end{enumerate}
+
+\subsection{technische Daten}
+\begin{itemize}
+	\item Tragfähigkeit: bis 1.500 kg (Paletten), max. Hubhöhe: 45 m
+	\item Geschwindigkeit: Horizontal bis 200 m/min, Vertikal bis 90 m/min
+	\item Positionierung: Lasersensoren und Kameras für millimetergenaue Platzierung
+	\item Energieeffizienz: Energierückgewinnungssystem beim Bremsen
+	\item Kommunikation: Ethernet/WLAN für WMS-Anbindung, OPC-UA für ERP-Integration
+	\item Sicherheitsfunktionen: Hindernissensoren, automatische Notbremsen
+	\item Umgebungsbeständigkeit: Betriebstemperatur -30°C bis +45°C (auch für Kühlhäuser)
+	\item Wartung: Selbstdiagnose und vorausschauende Wartung
+\end{itemize}
+
+
+\section{softwaretechnische Lösung}
+In diesem Abschnitt werden alle Maßnahemen für die softwaretechnische Lösung aufgezeigt...
+\subsection{Implementierung des Lagerverwaltungssystem}
+Das WMS wird auf einem zentralen Server oder in einer Cloud-basierten Lösung installiert und mit den Daten zu allen Lagerplätzen, Beständen und Aufträgen gefüttert. In einem initialen Schritt werden alle Lagerartikel in das System eingepflegt, sodass das WMS jederzeit den exakten Lagerbestand und die Positionen der Waren im Regal kennt. Es agiert als zentrale Plattform zur Verwaltung der Lagerprozesse, plant die Ein- und Auslagerungen, weist den Regalbediengeräten entsprechende Aufgaben zu und überwacht ihre Ausführung in Echtzeit.
+
+\subsection{Verbindung mit ERP-System}
+Um den gesamten Material- und Warenfluss effizient zu steuern, wird das WMS direkt mit dem ERP-System des Unternehmens verknüpft. Das ERP-System verwaltet die übergeordneten Geschäftsdaten wie Bestellungen, Lagerbestände und Produktionsanforderungen. Wenn beispielsweise eine neue Bestellung im ERP eingeht, übermittelt das System die Anforderungen an das WMS, welches daraufhin automatisch die Lageraufträge für die Regalbediengeräte erstellt.
+
+Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert.
+
+\subsection{??? Vernetzung und IoT}
+Vernetzung und IoT (Internet der Dinge): Alle Geräte im Lager sind mit Sensoren ausgestattet und über das Internet der Dinge vernetzt. Diese Sensoren erfassen und übertragen in Echtzeit Daten wie Standort, Zustand und Energieverbrauch der Geräte. Das IoT ermöglicht es dem Unternehmen, den Zustand der Geräte kontinuierlich zu überwachen und Wartungen proaktiv durchzuführen, bevor es zu Störungen kommt.
+
+\subsection{??? Künstliche Intelligenz zur Lageroptimierung}
+Optimierung von Lagerprozessen mit KI: Künstliche Intelligenz kann die Abläufe im Lager optimieren, indem sie aus vergangenen Daten lernt und zukünftige Nachfrageprognosen erstellt. Maschinelles Lernen analysiert Bestellmuster und Lagerbewegungen, um die Lagerplatzierung von Artikeln zu optimieren und die Rüstzeiten zu reduzieren.
