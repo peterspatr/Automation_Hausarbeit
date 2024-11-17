@@ -1,26 +1,31 @@
 \chapter{Einleitung}
 
-%*******************************************************************************************************************
-Aufgrund des Fachkräftemangels, auch im Bereich Logistik, wird es immer wichtiger, möglich viele Arbeitsschritte zu automatisieren.
-In dieser Hausarbeit wird einer fiktiven Optimierung eines Hochregallagers nachgegangen. 
-Momentan befindet sich das Hochregal in einem kompletten manuellen Betrieb. Die Ware muss von einem Mitarbeiter händisch einsortiert werden. Dieser pflegt auch die Daten ins System ein und bestellt bei Bedarf die Ware nach.
-All diese Arbeitsschritte sind zeitintensiv und anfällig für Fehler.
+Sehr geehrte Geschäftsführung,  
 
-%-----------------------------------Problemstellung---------------------------------------------------------------
-Ziel ist es, durch eine Automatisierung soll das Hochregallager effizienter werden. Die Automatisierung soll zu einer höheren Produktivität führen, indem die Bearbeitungszeit verringert und die Fehler minimiert werden. Dafür soll das Hochregalsystem in der Lage sein, die Waren eigenständig ein- und auslagern zu können. 
-Bei einem niedrigen Lagerbestand soll über das ERP-System neue Ware nachbestellt werden. Hierfür ist es notwendig, dass das Hochregallager den Lagerbestand in Echtzeit überwacht. Um diese Anforderung umzusetzen, ist es wichtig, dass alle Produkte zuverlässig erkannt werden. Die Erkennung erfolgt über die RFID-Technologie, welche eine hohe Digitalisierung des Lagers voraussetzt, um die Informationen kontinuierlich aktualisieren zu können.
+die Automatisierung unseres Hochregallagers bietet eine einzigartige Möglichkeit, die Effizienz und Wettbewerbsfähigkeit unseres Unternehmens maßgeblich zu steigern. Mit modernen Technologien können wir Bearbeitungszeiten verkürzen, Fehlerquoten minimieren und die Sicherheit unserer Mitarbeiter erhöhen, während wir gleichzeitig langfristige Kosten senken. Dieses Projekt ist eine zukunftsweisende Investition, die uns flexibler und nachhaltiger auf die Anforderungen eines dynamischen Marktes reagieren lässt.  
 
-%-----------------------------------Zielsetzung---------------------------------------------------------------------
-														%% Der Absatz gefällt mir noch nicht 
-Ziel dieser Hausarbeit ist es, ein umfassendes Grobkonzept zu entwickeln. Dieses Konzept soll dabei helfen, die Idee eines automatisierten Hochregallagers klar und anschaulich der Geschäftsleitung zu präsentieren. 
-Das Aufzeigen der Vorteile soll die Manager von einer Umstellung auf eine Automation überzeugen und die Bereitstellung eines Budgets sichern.
+Für die Erstellung der vorliegenden Dokumentation haben zahlreiche Experten aus den Bereichen Logistik, Automatisierungstechnik und IT eng zusammengearbeitet. Ihre Fachkenntnisse und tiefgehenden Analysen haben zu einem umfassenden Verständnis der Chancen und Herausforderungen dieses Projekts geführt. Auf den folgenden Seiten finden Sie eine kurze präzise Darstellung der Vorteile, die erforderlichen Maßnahmen und Vorgehensweise, die kalkulierten Kosten, aber auch die Risiken dieses Projekts.  
 
-%-----------------------------------Gliederung---------------------------------------------------------------------
-In dieser Hausarbeit wird auf folgende fünf Themen eingegangen:
-\begin{enumerate}
-	\item \textbf{Benefits: }Hier wird auf die Vorteile, welche durch eine Automatiesierung des Lagers entstehen, eingegangen
-	\item \textbf{Vorgehensweise:}
-	\item \textbf{Risiken:}
-	\item \textbf{Kosten:}
-	\item \textbf{Innovationsgrad:}
-\end{enumerate}
+Das Automatsierungsteam ladet Sie herzlich ein, dieses Wissen zu nutzen und mit uns gemeinsam den nächsten Schritt in eine innovative und erfolgreiche Zukunft zu gehen. 
+
+
+\chapter{IST-Zustand der Lagerlogistik} 
+
+Das Hochregallager unseres Unternehmens wird derzeit manuell betrieben. Mit einer Kapazität von \textbf{10.000 Lagerplätzen} erfolgt die Ein- und Auslagerung ausschließlich mit \textbf{Gabelstaplern}, wobei alle Warenbewegungen manuell im Computersystem erfasst werden. Obwohl dieses System über viele Jahre zuverlässig funktioniert hat, stoßen wir zunehmend an seine Grenzen, insbesondere in Hinblick auf Effizienz, Fehleranfälligkeit und Skalierbarkeit.
+
+\subsection*{Kapazität und Arbeitsabläufe}
+Der tägliche \textbf{Wareneingang} liegt bei \textbf{300 Paletten}, der \textbf{Warenausgang} bei \textbf{400 Paletten}. Die Prozesse sind langsam und fehleranfällig, da die Einlagerung und Datenerfassung zeitversetzt erfolgen. Dies führt häufig zu ungenauen Bestandsdaten und Verzögerungen.\\ 
+Die größten Herausforderungen bestehen bei der Datenverwaltung: Jeder Wareneingang und jede Auslagerung muss manuell in das Lagerverwaltungssystem eingegeben werden. Dies erfolgt oft zeitversetzt, was dazu führen kann, dass Bestandsdaten nicht in Echtzeit verfügbar sind. Solche Verzögerungen können zu Fehlbeständen oder Überbeständen führen, was wiederum die Kundenzufriedenheit beeinträchtigen kann.
+
+\subsection*{Mitarbeiter und Arbeitszeiten}
+Im Zwei-Schicht-Betrieb mit \textbf{10 Mitarbeitern} wird täglich \textbf{16 Stunden} gearbeitet. Die Arbeit ist körperlich belastend und umfasst sowohl die Bedienung der Gabelstapler als auch manuelle Tätigkeiten wie das Bewegen von Kartons.
+
+\subsection*{Herausforderungen}
+\begin{itemize}
+	\item \textbf{Effizienz}: Langsame Prozesse und fehlende Echtzeitdaten.
+	\item \textbf{Fehleranfälligkeit}: Häufige Eingabefehler und Fehlplatzierungen.
+	\item \textbf{Sicherheitsrisiken}: Hohe körperliche Belastung und Unfallgefahr.
+	\item \textbf{Kapazitätsgrenzen}: Steigende Anforderungen erschweren den reibungslosen Betrieb.
+\end{itemize}
+
+\textbf{Fazit:} Der derzeitige Betrieb des Hochregallagers ist funktional, aber ineffizient und mit erheblichen Risiken verbunden. Angesichts des wachsenden Bedarfs an höherer Geschwindigkeit, Präzision und Sicherheit besteht ein klarer Handlungsbedarf, um die Lagerprozesse an moderne Standards anzupassen. Eine Automatisierung bietet die Möglichkeit, diese Schwachstellen zu beseitigen und das Lager zukunftsfähig aufzustellen.

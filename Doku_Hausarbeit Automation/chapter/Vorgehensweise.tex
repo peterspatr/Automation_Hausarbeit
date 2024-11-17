@@ -6,8 +6,8 @@
 \section{hardwaretechnische Umsetzung}
 In diesem Abschnitt werden alle Maßnahemen für die hardwaretechnische Lösung aufgezeigt. Dabei wird die Funktionsweise erläutert und die technischen Spezifikationen dargelegt.
 \subsection{Einsatz von Regalbediengeräten}
-
-Der technische Ablauf eines Regalbediengeräts (RBG) läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS) gesteuert werden:
+Die Gabelstapler werden durch Regalbediengeräten (RGB) ersetzt.
+Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS) gesteuert werden:
 \begin{enumerate}
 \item Auftragseingang
 Das WMS gibt dem RBG einen Ein- oder Auslagerungsauftrag, der den genauen Lagerplatz der Ware sowie deren Position im Regal enthält. Das RBG erhält diese Informationen und bereitet sich automatisch auf die Ausführung vor.
@@ -40,7 +40,7 @@ Diese vollautomatisierten und präzisen Abläufe ermöglichen einen effizienten 
 \section{softwaretechnische Lösung}
 In diesem Abschnitt werden alle Maßnahemen für die softwaretechnische Lösung aufgezeigt...
 \subsection{Implementierung des Lagerverwaltungssystem}
-Das WMS wird auf einem zentralen Server oder in einer Cloud-basierten Lösung installiert und mit den Daten zu allen Lagerplätzen, Beständen und Aufträgen gefüttert. In einem initialen Schritt werden alle Lagerartikel in das System eingepflegt, sodass das WMS jederzeit den exakten Lagerbestand und die Positionen der Waren im Regal kennt. Es agiert als zentrale Plattform zur Verwaltung der Lagerprozesse, plant die Ein- und Auslagerungen, weist den Regalbediengeräten entsprechende Aufgaben zu und überwacht ihre Ausführung in Echtzeit.
+Das WMS wird in einer Cloud-basierten Lösung installiert und mit den Daten zu allen Lagerplätzen, Beständen und Aufträgen gefüttert. In einem initialen Schritt werden alle Lagerartikel in das System eingepflegt, sodass das WMS jederzeit den exakten Lagerbestand und die Positionen der Waren im Regal kennt. Es agiert als zentrale Plattform zur Verwaltung der Lagerprozesse, plant die Ein- und Auslagerungen, weist den Regalbediengeräten entsprechende Aufgaben zu und überwacht ihre Ausführung in Echtzeit.
 
 \subsection{Verbindung mit ERP-System}
 Um den gesamten Material- und Warenfluss effizient zu steuern, wird das WMS direkt mit dem ERP-System des Unternehmens verknüpft. Das ERP-System verwaltet die übergeordneten Geschäftsdaten wie Bestellungen, Lagerbestände und Produktionsanforderungen. Wenn beispielsweise eine neue Bestellung im ERP eingeht, übermittelt das System die Anforderungen an das WMS, welches daraufhin automatisch die Lageraufträge für die Regalbediengeräte erstellt.
