@@ -6,20 +6,20 @@
 \section{hardwaretechnische Umsetzung}
 In diesem Abschnitt werden alle Maßnahemen für die hardwaretechnische Lösung aufgezeigt. Dabei wird die Funktionsweise erläutert und die technischen Spezifikationen dargelegt.
 \subsection{Einsatz von Regalbediengeräten}
-Die Gabelstapler werden durch Regalbediengeräten (RGB) ersetzt. Sie bewegen sich horizontal entlang von Schienen und vertikal zwischen den Regalebenen, wodurch sie Waren effizient transportieren können. 
-Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel ..., gesteuert werden. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden.
+Die Gabelstapler werden durch Regalbediengeräten (RGB) ersetzt. Sie bewegen sich horizontal entlang von Schienen und vertikal zwischen den Regalebenen, wodurch sie Waren effizient transportieren können (Abb. 4.1).
+Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel ..., gesteuert werden \autocite{heinrich2021}. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{images/RGB}
+	\caption{RGB mit Schienenführung}
+	\label{fig:rgb}
+\end{figure}
 
 
 \subsection{Einsatz von Förderbänder}
 Für den Weitertransport der Paletten innerhalb des Lagers werden Förderbänder eingesetzt, die eine zuverlässige und effiziente Verbindung zwischen Wareneingang, Hochregallager und Warenausgang ermöglichen. In unserem Projekt werden etwa 50 Meter Förderband benötigt, um alle relevanten Bereiche abzudecken. Dabei werden die Bänder direkt an die Regalbediengeräte und Warenschnittstellen angeschlossen, um einen nahtlosen Materialfluss sicherzustellen. Der Platz für die Installation ist gegeben.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{images/skizze-Aufbau}
-	\caption{schematische Darstellung mit der Implemtierung von RBGs und Föderbänderanlagen}
-	\label{fig:skizze-aufbau}
-\end{figure}
 
 \section{softwaretechnische Lösung}
 In diesem Abschnitt werden alle Maßnahemen für die softwaretechnische Lösung aufgezeigt. Hierbei besteht die herausforderung das Lagerverwaltungssystem mit den RGBs zu verknüpfen. Außerdem soll eine Verzahnung zwischen dem WMS und dem jetztigen genutzten ERP-System realisiert werden. Alle benötigte Sensorik und Aktorik sollen über IoT vernetzt werden.
@@ -30,6 +30,14 @@ Das WMS wird in einer Cloud-basierten Lösung installiert und mit den Daten zu a
 Um den gesamten Material- und Warenfluss effizient zu steuern, wird das WMS direkt mit dem ERP-System des Unternehmens verknüpft. Das ERP-System verwaltet die übergeordneten Geschäftsdaten wie Bestellungen, Lagerbestände und Produktionsanforderungen. Wenn beispielsweise eine neue Bestellung im ERP eingeht, übermittelt das System die Anforderungen an das WMS, welches daraufhin automatisch die Lageraufträge für die Regalbediengeräte erstellt.
 
 Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{"../../../../../../../Pictures/Photos Library.photoslibrary/originals/9/92105DB8-75FE-4262-9BD0-B83CF46D7E20"}
+	\caption{Die Verknüpfung des WMS- und ERP-System bietet viele Vorteile}
+	\label{fig:92105db8-75fe-4262-9bd0-b83cf46d7e20}
+\end{figure}
 
 \subsection{Vernetzung und IoT}
  Alle Geräte im Lager sind mit Sensoren ausgestattet und über das Internet der Dinge vernetzt. Diese Sensoren erfassen und übertragen in Echtzeit Daten wie Standort, Zustand und Energieverbrauch der Geräte. Das IoT ermöglicht es dem Unternehmen, den Zustand der Geräte kontinuierlich zu überwachen und Wartungen proaktiv durchzuführen, bevor es zu Störungen kommt.
@@ -69,3 +77,10 @@ Ist das System erstmal installiert, kann in naher Zukunft zur Optimierung der Lo
 	Sobald die Ware den Warenausgang erreicht, wird dies automatisch an das \textbf{ERP-System} zurückgemeldet. Das ERP-System aktualisiert den Bestand, erstellt die Versanddokumente und schließt den Auftrag ab.
 	
 \end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/skizze-Aufbau}
+	\caption{schematische Darstellung mit der Implemtierung von RBGs und Föderbandanlagen}
+	\label{fig:skizze-aufbau}
+\end{figure}
