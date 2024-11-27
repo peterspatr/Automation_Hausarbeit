@@ -7,7 +7,7 @@
 In diesem Abschnitt werden alle Maßnahemen für die hardwaretechnische Lösung aufgezeigt. Dabei wird die Funktionsweise erläutert und die technischen Spezifikationen dargelegt.
 \subsection{Einsatz von Regalbediengeräten}
 Die Gabelstapler werden durch Regalbediengeräten (RGB) ersetzt. Sie bewegen sich horizontal entlang von Schienen und vertikal zwischen den Regalebenen, wodurch sie Waren effizient transportieren können (Abb. 4.1).
-Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel ..., gesteuert werden \autocites{martin_technische_2021}. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden.
+Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel 4.2.1, gesteuert werden \autocites{martin_technische_2021}. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden.
 
 \begin{figure}
 	\centering
@@ -24,12 +24,12 @@ Für den Weitertransport der Paletten innerhalb des Lagers werden Förderbänder
 \section{softwaretechnische Lösung}
 In diesem Abschnitt werden alle Maßnahemen für die softwaretechnische Lösung aufgezeigt. Hierbei besteht die herausforderung das Lagerverwaltungssystem mit den RGBs zu verknüpfen. Außerdem soll eine Verzahnung zwischen dem WMS und dem jetztigen genutzten ERP-System realisiert werden. Alle benötigte Sensorik und Aktorik sollen über IoT vernetzt werden.
 \subsection{Implementierung des Lagerverwaltungssystem}
-Das WMS wird in einer Cloud-basierten Lösung installiert und mit den Daten zu allen Lagerplätzen, Beständen und Aufträgen gefüttert. In einem initialen Schritt werden alle Lagerartikel in das System eingepflegt, sodass das WMS jederzeit den exakten Lagerbestand und die Positionen der Waren im Regal kennt. Es agiert als zentrale Plattform zur Verwaltung der Lagerprozesse, plant die Ein- und Auslagerungen, weist den Regalbediengeräten entsprechende Aufgaben zu und überwacht ihre Ausführung in Echtzeit.
+Das WMS wird in einer Cloud-basierten Lösung installiert und mit den Daten zu allen Lagerplätzen, Beständen und Aufträgen gefüttert. In einem initialen Schritt werden alle Lagerartikel in das System eingepflegt, sodass das WMS jederzeit den exakten Lagerbestand und die Positionen der Waren im Regal kennt. Es agiert als zentrale Plattform zur Verwaltung der Lagerprozesse, plant die Ein- und Auslagerungen, weist den Regalbediengeräten entsprechende Aufgaben zu und überwacht ihre Ausführung in Echtzeit\autocites{wehking_technisches_2020}.
 
 \subsection{Verbindung mit ERP-System}
 Um den gesamten Material- und Warenfluss effizient zu steuern, wird das WMS direkt mit dem ERP-System des Unternehmens verknüpft. Das ERP-System verwaltet die übergeordneten Geschäftsdaten wie Bestellungen, Lagerbestände und Produktionsanforderungen. Wenn beispielsweise eine neue Bestellung im ERP eingeht, übermittelt das System die Anforderungen an das WMS, welches daraufhin automatisch die Lageraufträge für die Regalbediengeräte erstellt.
 
-Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert.
+Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert \autocites{sarferaz_erp-marktanalyse_2023}.
 
 
 \begin{figure}[H]
@@ -40,10 +40,10 @@ Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos
 \end{figure}
 
 \subsection{Vernetzung und IoT}
- Alle Geräte im Lager sind mit Sensoren ausgestattet und über das Internet der Dinge vernetzt. Diese Sensoren erfassen und übertragen in Echtzeit Daten wie Standort, Zustand und Energieverbrauch der Geräte. Das IoT ermöglicht es dem Unternehmen, den Zustand der Geräte kontinuierlich zu überwachen und Wartungen proaktiv durchzuführen, bevor es zu Störungen kommt.
+ Alle Geräte im Lager sind mit Sensoren ausgestattet und über das Internet der Dinge vernetzt. Diese Sensoren erfassen und übertragen in Echtzeit Daten wie Standort, Zustand und Energieverbrauch der Geräte. Das IoT ermöglicht es dem Unternehmen, den Zustand der Geräte kontinuierlich zu überwachen und Wartungen proaktiv durchzuführen, bevor es zu Störungen kommt \autocites{mulder_internet_2024}.
 
 \subsection{Künstliche Intelligenz zur Lageroptimierung}
-Ist das System erstmal installiert, kann in naher Zukunft zur Optimierung der Logistik künstliche Intelligenz hinzugezogen werden. Künstliche Intelligenz kann die Abläufe im Lager optimieren, indem sie aus vergangenen Daten lernt und zukünftige Nachfrageprognosen erstellt. Maschinelles Lernen analysiert Bestellmuster und Lagerbewegungen, um die Lagerplatzierung von Artikeln zu optimieren und die Rüstzeiten zu reduzieren. Die Verwendung von künstlicher Intelligenz wird drigend geraten, um auch mit anderen Unternehmen in Zukunft wettbewerbsfähig zu bleiben.
+Ist das System erstmal installiert, kann in naher Zukunft zur Optimierung der Logistik künstliche Intelligenz hinzugezogen werden. Künstliche Intelligenz kann die Abläufe im Lager optimieren, indem sie aus vergangenen Daten lernt und zukünftige Nachfrageprognosen erstellt. Maschinelles Lernen analysiert Bestellmuster und Lagerbewegungen, um die Lagerplatzierung von Artikeln zu optimieren und die Rüstzeiten zu reduzieren. Die Verwendung von künstlicher Intelligenz wird drigend geraten, um auch mit anderen Unternehmen in Zukunft wettbewerbsfähig zu bleiben \autocite{babel_kunstliche_2024}.
 
 
 \section{Ablauf}
