@@ -7,14 +7,15 @@
 In diesem Abschnitt werden alle Maßnahemen für die hardwaretechnische Lösung aufgezeigt. Dabei wird die Funktionsweise erläutert und die technischen Spezifikationen dargelegt.
 \subsection{Einsatz von Regalbediengeräten}
 Die Gabelstapler werden durch Regalbediengeräten (RGB) ersetzt. Sie bewegen sich horizontal entlang von Schienen und vertikal zwischen den Regalebenen, wodurch sie Waren effizient transportieren können (Abb. 4.1).
-Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel 4.2.1, gesteuert werden \autocites{martin_technische_2021}. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden.
+Der technische Ablauf eines RGBs läuft in mehreren automatisierten Schritten ab, die durch ein Lagerverwaltungssystem (WMS), dargestellt in Kapitel 4.2.1, gesteuert werden \autocites{martin_technische_2021}. Für unsere Anordnung der Regale werden vier RGBs benötigt. Schienen und Führungselemente müssen dazu in den Zwischengängen installiert werden\autocite{Logistik_2024}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{images/RGB}
-	\caption{RGB mit Schienenführung}
+	\caption[RGB mit Schienenführung \autocite{Logistik_2024}]{RGB mit Schienenführung}
 	\label{fig:rgb}
 \end{figure}
+
 
 
 \subsection{Einsatz von Förderbänder}
@@ -29,14 +30,14 @@ Das WMS wird in einer Cloud-basierten Lösung installiert und mit den Daten zu a
 \subsection{Verbindung mit ERP-System}
 Um den gesamten Material- und Warenfluss effizient zu steuern, wird das WMS direkt mit dem ERP-System des Unternehmens verknüpft. Das ERP-System verwaltet die übergeordneten Geschäftsdaten wie Bestellungen, Lagerbestände und Produktionsanforderungen. Wenn beispielsweise eine neue Bestellung im ERP eingeht, übermittelt das System die Anforderungen an das WMS, welches daraufhin automatisch die Lageraufträge für die Regalbediengeräte erstellt.
 
-Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert \autocites{sarferaz_erp-marktanalyse_2023}.
-
+Durch diese enge Verzahnung zwischen WMS und ERP können Warenbewegungen nahtlos in die Unternehmensprozesse integriert werden. Sobald ein Auftrag abgeschlossen ist, meldet das WMS die Informationen über die Bestandsänderungen zurück an das ERP-System, welches daraufhin die Bestands- und Finanzdaten aktualisiert \autocites{sarferaz_erp-marktanalyse_2023}
+\autocites{modula_2024}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{images/ERP}
-	\caption{Die Verknüpfung des WMS- und ERP-System bietet viele Vorteile}
-	\label{fig:92105db8-75fe-4262-9bd0-b83cf46d7e20}
+	\caption[Die Verknüpfung des WMS- und ERP-System \autocites{modula_2024} .]{Die Verknüpfung des WMS- und ERP-System } 
+	\label{fig:EPR}
 \end{figure}
 
 \subsection{Vernetzung und IoT}
@@ -81,6 +82,7 @@ Ist das System erstmal installiert, kann in naher Zukunft zur Optimierung der Lo
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/skizze-Aufbau}
-	\caption{schematische Darstellung mit der Implemtierung von RBGs und Föderbandanlagen}
+	\caption[Schematische Darstellung des Hochregallagers \autocites{Martin2021} ] {schematische Darstellung mit der Implemtierung von RBGs und Föderbandanlagen}
 	\label{fig:skizze-aufbau}
 \end{figure}
+\autocites{Martin2021}
